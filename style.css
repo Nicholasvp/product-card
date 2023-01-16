@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --bg-body: #D9CDF7;
+    --ff-primary: 'Crimson Pro', serif;
+    --ff-secondary: 'Lato', sans-serif;
+    --fc-primary: #271A45;
+
+    --fs-heading: 3.2rem;
+    --fs-secondary: 1rem;
+    --fs-price: 1.6rem;
+    --fs-button: 1.2rem;
+}
+
+body {
+    background-color: var(--bg-body);
+}
+
+main {
+    margin: 13.8rem 20rem;
+    display: flex;
+    align-items: center;
+    gap: 13rem;
+    
+}
+
+.code {
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-secondary);
+}
+
+.product-name {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-heading);
+}
+
+.price{
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-price);
+    font-weight: 400;
+}
+
+.buy {
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-button);
+}
+
+.hide {
+    display: none;
+    transition: 0.7s;
+}
+
+.gif-sofa, .img-sofa {
+    width: 450px;
+    height: 223px;
+}
+
+#product {
+    height: fit-content;
+    position: relative;
+}
+
+#product button{
+    background: transparent;
+    border: none; 
+}
+
+.close {
+    position: absolute;
+    top: 0px;
+    left: 430px;
+}
+
+.active-360 {
+    position: absolute;
+    top: 0px;
+    left: 420px;
+}
+
+
+button:hover {
+    cursor: pointer;
+}
+
+#info {
+    display: grid;
+    gap: 12px;
+}
+
+.buy {
+    margin-top: 20px;
+    background: transparent;
+    border: 1px solid var(--fc-primary);
+    border-radius: 99rem;
+
+    width: 148px;
+    height: 32px;
+    transition: 0.3s;
+}
+
+.buy:hover {
+    cursor: pointer;
+    background-color: #271A45;
+    color: #D9CDF7;
+    font-weight: bolder;
+}
+
+@media (max-width: 700px) {
+    main{
+        margin: 5rem;
+        display: grid;
+    }
+    
+    .img-sofa, .gif-sofa{
+        width: 300px;
+        height: 150px;
+    }
+
+    .close{
+        left: 265px;
+    }
+
+    .active-360{
+        left: 250px;
+    }
+}
